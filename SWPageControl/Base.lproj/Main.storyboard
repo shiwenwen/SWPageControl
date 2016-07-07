@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIe-N0-lUk" customClass="SWPageControl">
+                                <rect key="frame" x="180" y="285" width="240" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="AAI-oG-7gI"/>
+                                    <constraint firstAttribute="height" constant="30" id="Nyf-pE-FV2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pv4-F5-qu5" customClass="SWPageControl">
+                                <rect key="frame" x="180" y="235" width="240" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84872450935678012" green="1" blue="0.91735036531360115" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wIe-N0-lUk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4Kl-Gx-xac"/>
+                            <constraint firstItem="wIe-N0-lUk" firstAttribute="width" secondItem="Pv4-F5-qu5" secondAttribute="width" id="D1R-5t-xjK"/>
+                            <constraint firstItem="Pv4-F5-qu5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IkB-6Z-iqi"/>
+                            <constraint firstItem="wIe-N0-lUk" firstAttribute="height" secondItem="Pv4-F5-qu5" secondAttribute="height" id="WBS-OE-RZ8"/>
+                            <constraint firstItem="wIe-N0-lUk" firstAttribute="top" secondItem="Pv4-F5-qu5" secondAttribute="bottom" constant="20" id="aTf-HI-W6L"/>
+                            <constraint firstItem="wIe-N0-lUk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kJO-qf-eH0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="swPageControl" destination="wIe-N0-lUk" id="gGA-g3-2ce"/>
+                        <outlet property="swPageControl2" destination="Pv4-F5-qu5" id="Zvl-0k-pHI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="331"/>
+        </scene>
+    </scenes>
+</document>
